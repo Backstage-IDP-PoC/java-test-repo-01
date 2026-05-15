@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+
+metadata:
+  name: java-test-repo-01
+  description: Service java-test-repo-01
+
+  annotations:
+    github.com/project-slug: Backstage-IDP-PoC/java-test-repo-01
+    backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: Backstage_SSP_PoC/java-test-repo-01/main
+    argocd/app-name: java-test-repo-01
+    backstage.io/kubernetes-id: java-test-repo-01
+    backstage.io/kubernetes-namespace: default
+    sonarqube.org/project-key: java-test-repo-01
+
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
